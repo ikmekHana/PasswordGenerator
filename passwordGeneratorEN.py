@@ -11,6 +11,9 @@ print('Here you can generate the required number of passwords')
 print('by selecting their length and characters for generation')
 
 def number_introduction():
+    '''
+    function that receives and checks the user's number
+    '''
     while True:
         number = input()
         if number.isdigit() is True:
@@ -19,6 +22,9 @@ def number_introduction():
             print('Enter the correct value - number')
 
 def answer_introduction():
+    '''
+    function that receives and checks the user's response
+    '''
     while True:
         print('Enter "y" if yes or "n" if no')
         answer = input()
@@ -30,6 +36,9 @@ def answer_introduction():
             print('Please enter the correct value')
 
 def password_generator(password_length, chars):
+    '''
+    function that generates and outputs the password
+    '''
     password = ''
     for _ in range(password_length):
         password += choice(chars)
